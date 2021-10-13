@@ -69,3 +69,12 @@
     }
   }
 }
+
+.socialLink {
+  
+  color: black;
+  
+  &:hover {
+    color: gray;
+  }
+}
