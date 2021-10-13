@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../header/header';
-import Main from '../main/main';
 import Footer from '../footer/footer';
 import './app.module.scss';
 
@@ -8,7 +7,7 @@ function App() {
   return (
     <>
       <Header/>
-      <Main/>
+      
       <Footer/>
     </>
   );
