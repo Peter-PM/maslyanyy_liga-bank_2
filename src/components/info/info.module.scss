@@ -1,0 +1,123 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 57px;
+  margin-top: 78px;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.list {
+  display: flex;
+  margin-top: 15px;
+}
+
+.item {
+  position: relative;
+  font-size: 16px;
+  color: rgba(72, 73, 77, 0.5);
+  min-width: 70px;
+  padding-top: 33px;
+  padding-right: 7px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 25px;
+    top: 0;
+    left: 30%;
+    opacity: 0.5;
+  }
+}
+
+.item1::after {
+  background: url('../../image/icon1.svg') no-repeat;
+}
+
+.item2::after {
+  background: url('../../image/icon2.svg') no-repeat;
+}
+
+.item3::after {
+  background: url('../../image/icon3.svg') no-repeat;
+}
+
+.item4::after {
+  background: url('../../image/icon4.svg') no-repeat;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  padding-top: 42px;
+  min-width: 340px;
+}
+
+.actualPrice {
+  font-size: 35px;
+  font-weight: 700;
+  margin-right: 36px;
+  max-width: 190px;
+
+}
+
+.oldPrice {
+  position: relative;
+  font-size: 20px;
+  color: rgba(72, 73, 77, 0.5);
+  padding-right: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: url('../../image/cross-line.svg') no-repeat;
+    left: 0;
+    top: 4px;
+  }
+}
+
+.button {
+  padding: 18px 19px;
+  margin-top: 41px;
+  margin-left: -3px;
+  background-color: #D12136;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #BD0C21;
+    transition: 0.2s;
+  }
+}
+
+.link {
+  padding: 17px 17px;
+  margin-top: 16px;
+  margin-left: -2px;
+
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #D12136;
+  border: 1px solid #D12136;
+
+  &:hover {
+    background-color: #D12136;
+    color: #FFFFFF;
+    transition: 0.2s;
+  }
+}

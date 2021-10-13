@@ -1,0 +1,68 @@
+.slider {
+  margin-left: 8px;
+  margin-top: 90px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.main_image {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.image_container {
+  position: relative;
+
+  &::before {
+    content: 'NEW MODEL';
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 122px;
+    height: 30px;
+    text-align: center;
+    background-color: #D12136;
+    color: #FFFFFF;
+    z-index: 2;
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 434px;
+}
+
+.active__images {
+  outline: 1px solid #D12136;
+}
+
+.button {
+  padding: 16px 15px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #D7D9DF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttonLeft {
+  transform: rotate(180deg);
+  margin-right: 31px;
+}
+
+.buttonRight {
+  margin-left: 31px;
+}
