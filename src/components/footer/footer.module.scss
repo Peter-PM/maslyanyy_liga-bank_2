@@ -6,46 +6,171 @@
   padding-top: 49px;
   padding-bottom: 84px;
   background-color: #F6F7FF;
+
+  @media (max-width: 1023px) {
+    min-height: 230px;
+    padding: 0 calc(50% - 384px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 59px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 calc(50% - 160px);
+    padding-top: 35px;
+    padding-bottom: 50px;
+    height: auto;
+  }
 }
 
-.footerSection {
+.footer__section {
 
   &:first-child {
     max-width: 252px;
+
+    @media (max-width: 1023px) {
+      padding-left: 45px;
+      align-self: stretch;
+      grid-column: 1/2;
+      grid-row: 1/-1;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    @media (max-width: 767px) {
+      grid-row: 1/2;
+      align-self: center;
+      padding-left: 15px;
+      margin-top: 4px;
+    }
   }
 
   &:nth-child(2) {
     padding-left: 81px;
     padding-top: 8px;
+
+    @media (max-width:1169px) {
+      padding-left: calc(20% - 135px);
+    }
+    
+    @media (max-width: 1023px) {
+      grid-row: 2/3;
+      grid-column: 1/2;
+      padding-left: 45px;
+      margin-top: -23px;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 15px;
+      padding-left: 15px;
+    }
   }
 
   &:nth-child(3) {
     padding-top: 12px;
     padding-left: 109px;
     max-width: 167px;
-    background: url('../../img/phone.png') no-repeat 81px 11px;
+    background: url('../../img/smartphone.svg') no-repeat 81px 11px;
+
+    @media (max-width: 1169px) {
+      padding-left: calc(20% - 135px);
+      background-position: 25% 11px;
+    }
+
+    @media (max-width: 1023px) {
+      padding-top: 1px;
+      padding-left: 44px;
+      background-position: 15px 1px;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 10px;
+    }
   }
 
   &:nth-child(4) {
     padding-left: 113px;
     padding-top: 11px;
     max-width: 122px;
-    background: url('../../img/phone-2.png') no-repeat 81px 11px;
+    background: url('../../img/phone.svg') no-repeat 81px 11px;
+
+    @media (max-width: 1169px) {
+      padding-left: calc(20% - 135px);
+      background-position: 28% 11px;
+    }
+
+    @media (max-width: 1023px) {
+      padding-top: 19px;
+      padding-left: 48px;
+      background-position: 15px 20px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 16px;
+      background-position: 15px 16px;
+    }
+  }
+
+  &:last-child {
+    padding-top: 11px;
+    padding-left: 80px;
+
+    @media (max-width:1169px) {
+      padding-left: calc(20% - 135px);
+    }
+
+    @media (max-width: 1023px) {
+      padding-top: 0;
+      padding-left: 15px;
+      margin-top: -10px;
+    }
+
+      @media (max-width: 767px) {
+        margin-top: 16px;
+    }
   }
 }
 
 .address {
   margin-top: 12px;
+
+  @media (max-width: 1023px) {
+    margin-top: 0;
+    margin-bottom: -6px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
 }
 
 .item {
   font-weight: 500;
+  font-size: 16px;
   padding-bottom: 13px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.link:hover {
+  color: gray;
 }
 
 .phone {
   display: block;
   font-weight: 500;
+
+  &:hover {
+    color: gray;
+  }
 }
 
 .description {
@@ -55,26 +180,34 @@
 }
 
 .social {
-  padding-top: 11px;
-  padding-left: 80px;
-  &List {
+  
+  &__list {
     display: flex;
   }
 
-  &Item {
+  &__item {
     padding-right: 15px;
+    
+    @media (max-width: 1023px) {
+      padding-right: 20px;
+    }
 
     &:last-child {
       padding-right: 0;
     }
   }
-}
 
-.socialLink {
+  &__link {
   
-  color: black;
-  
-  &:hover {
-    color: gray;
+    color: black;
+    
+    &:hover {
+      color: gray;
+    }
+  }
+
+  @media (max-width:1169px) {
+    padding-left: 40px;
   }
 }
+

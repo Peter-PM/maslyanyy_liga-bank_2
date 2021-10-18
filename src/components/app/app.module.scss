@@ -31,10 +31,18 @@
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1024px;
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0 auto;
   padding: 0;
+
+  @media (max-width: 1023px) {
+    min-width: 768px;
+  }
+
+  @media (max-width: 767px) {
+    min-width: 320px;
+  }
 }
 
 ul {
