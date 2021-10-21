@@ -1,0 +1,19 @@
+.crumbs {
+  display: flex;
+  padding-right: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.crumb {
+  width: 8px;
+  height: 8px;
+  background-color: #2028B6;
+  margin-left: 8px;
+  border-radius: 50%;
+  margin-top: -40px;
+
+  &__active {
+    background-color: #F6F7FF;
+  }
+}

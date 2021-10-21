@@ -1,0 +1,46 @@
+.promo {
+  display: flex;
+  padding: 0 calc(50% - 585px);
+  margin: 0 auto;
+  background:
+    url('../../img/men.png') no-repeat center,
+    linear-gradient(to right, #dde2ec, #dde2ec, #f4fbff, #f4fbff);
+  height: 400px;
+}
+
+.wrapperRight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+  margin-right: 181px;
+}
+
+
+.title {
+  margin: 0;
+  padding-top: 115px;
+  padding-bottom: 25px;
+  font-size: 54px;
+  font-weight: 700;
+  color: #1F1E25;
+  line-height: 38px;
+}
+
+.description {
+  font-size: 22px;
+  color: #1F1E25;
+  padding-bottom: 39px;
+  line-height: 16px;
+}
+
+.link {
+  color: #F6F7FF;
+  font-size: 18px;
+  font-weight: 500;
+  width: 234px;
+  background-color: #2C36F2;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
