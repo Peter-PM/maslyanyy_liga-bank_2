@@ -17,7 +17,7 @@
       @media (max-width: 767px) {
         margin-top: 14px;
         margin-left: 31px;
-        margin-bottom: 44px;
+        margin-bottom: 13px;
       }
     }
   }
@@ -26,6 +26,7 @@
     padding: 0 calc(50% - 145px);
     flex-wrap: wrap;
     position: relative;
+    min-height: 48px;
   }
 }
 
@@ -132,6 +133,10 @@
       font-size: 16px;    
     }  
   }
+
+  &__none {
+    font-size: 0;
+  }
 }
 
 .button {
@@ -158,8 +163,13 @@
     &__close {
       color: #011C40;
       top: 10px;
-      // right: 13px;
       left: calc(50% + 131px);
     }
   }
 }
+
+.svg__mobile {
+  margin-right: 0;
+  margin-top: 3px;
+}
+
